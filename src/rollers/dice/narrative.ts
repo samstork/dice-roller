@@ -45,7 +45,7 @@ class BoostRoller extends NarrativeRoller {
             if (result === 1) continue; //Blank
             if (result === 0) continue;
         }
-
+        console.log("Boost Result:", narrativeResult);
         return narrativeResult;
     }
     override getType(): RenderTypes {
@@ -77,7 +77,7 @@ class SetbackRoller extends NarrativeRoller {
             if (result === 1) continue; //Blank
             if (result === 0) continue;
         }
-
+        console.log("Setback Result:", narrativeResult);
         return narrativeResult;
     }
     override getType(): RenderTypes {
@@ -118,7 +118,7 @@ class AbilityRoller extends NarrativeRoller {
             if (result === 1) continue; //Blank
             if (result === 0) continue;
         }
-
+        console.log("Ability Result:", narrativeResult);
         return narrativeResult;
     }
     override getType(): RenderTypes {
@@ -156,7 +156,7 @@ class DifficultyRoller extends NarrativeRoller {
             if (result === 1) continue; //Blank
             if (result === 0) continue;
         }
-
+        console.log("Difficulty Result:", narrativeResult);
         return narrativeResult;
     }
     override getType(): RenderTypes {
@@ -217,6 +217,7 @@ class ProficiencyRoller extends NarrativeRoller {
             if (result === 1) continue; //Blank
             if (result === 0) continue;
         }
+        console.log("Proficiency Result:", narrativeResult);
 
         return narrativeResult;
     }
@@ -277,7 +278,7 @@ class ChallengeRoller extends NarrativeRoller {
             if (result === 1) continue; //Blank
             if (result === 0) continue;
         }
-
+        console.log("Challenge Result:", narrativeResult);
         return narrativeResult;
     }
     override getType(): RenderTypes {
@@ -316,7 +317,7 @@ class ForceRoller extends NarrativeRoller {
             if (result === 1) narrativeResult.dark += 1; //1 Dark
             if (result === 0) continue;
         }
-
+        console.log("Force Result:", narrativeResult);
         return narrativeResult;
     }
     override getType(): RenderTypes {
